@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ODTHAN — Connexion admin</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/assets/icons/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+  body{background:var(--grey-light)}
+  .admin-wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+  .admin-card{background:#fff;border:1px solid #E4E4E4;padding:36px;max-width:380px;width:100%}
+  .admin-card img{height:28px;margin-bottom:22px}
+  .admin-card h1{font-size:20px;margin:0 0 6px}
+  .admin-card p.sub{color:#666;font-size:14px;margin:0 0 24px}
+  .field{margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="admin-wrap">
+  <div class="admin-card">
+    <img src="/assets/logo-full-trans.png" alt="ODTHAN">
+    <h1>Espace administration</h1>
+    <p class="sub">Réservé à l'équipe Odthan.</p>
+    <form id="login-form" novalidate>
+      <div class="field">
+        <label for="email" style="display:block;font-size:13px;font-weight:700;margin-bottom:6px">E-mail</label>
+        <input id="email" name="email" type="email" required style="width:100%;padding:11px 13px;border:1px solid #D8D8D8;border-radius:2px">
+      </div>
+      <div class="field">
+        <label for="password" style="display:block;font-size:13px;font-weight:700;margin-bottom:6px">Mot de passe</label>
+        <input id="password" name="password" type="password" required style="width:100%;padding:11px 13px;border:1px solid #D8D8D8;border-radius:2px">
+      </div>
+      <button class="btn btn-primary" type="submit" style="width:100%">Se connecter</button>
+      <p id="login-status" style="margin-top:14px;font-size:13.5px;color:#B5251F"></p>
+    </form>
+  </div>
+</div>
+<script src="/js/admin.js"></script>
+</body>
+</html>

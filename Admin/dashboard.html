@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ODTHAN — Tableau de bord admin</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/assets/icons/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+  body{background:var(--grey-light)}
+  .admin-top{background:#000;color:#fff;padding:16px 0}
+  .admin-top .container{display:flex;align-items:center;justify-content:space-between}
+  .admin-top img{height:22px}
+  .tabs{display:flex;gap:4px;margin:24px 0;flex-wrap:wrap}
+  .tab-btn{padding:10px 16px;border:1px solid #DDD;background:#fff;cursor:pointer;font-weight:700;font-size:13.5px;border-radius:2px}
+  .tab-btn.is-active{background:#000;color:#fff;border-color:#000}
+  .panel{display:none;background:#fff;border:1px solid #E4E4E4;overflow-x:auto}
+  .panel.is-active{display:block}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:720px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid #EFEFEF;vertical-align:top}
+  th{background:#FAFAFA;font-size:12px;text-transform:uppercase;letter-spacing:.03em;color:#777}
+  select.status-select{padding:6px 8px;border:1px solid #D8D8D8;border-radius:2px;font-size:12.5px}
+  .empty-state{padding:40px;text-align:center;color:#888}
+  .settings-form{padding:24px;max-width:420px}
+</style>
+</head>
+<body>
+<div class="admin-top">
+  <div class="container">
+    <img src="/assets/logo-full-trans.png" alt="ODTHAN" style="filter:invert(1)">
+    <div style="display:flex;align-items:center;gap:14px">
+      <span id="who" style="font-size:13px;color:#BBB"></span>
+      <button id="logout-btn" class="btn btn-ghost-white" style="padding:8px 14px;font-size:12.5px">Déconnexion</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="tabs">
+    <button class="tab-btn is-active" data-tab="leads">Messages</button>
+    <button class="tab-btn" data-tab="bookings">Réservations</button>
+    <button class="tab-btn" data-tab="starts">Kòmanse biznis</button>
+    <button class="tab-btn" data-tab="settings">Réglages</button>
+  </div>
+
+  <div class="panel is-active" id="panel-leads">
+    <table>
+      <thead><tr><th>Date</th><th>Nom</th><th>Contact</th><th>Message</th><th>Statut</th></tr></thead>
+      <tbody id="leads-body"></tbody>
+    </table>
+    <div class="empty-state" id="leads-empty" style="display:none">Aucun message pour le moment.</div>
+  </div>
+
+  <div class="panel" id="panel-bookings">
+    <table>
+      <thead><tr><th>Date / heure</th><th>Service</th><th>Type</th><th>Client</th><th>Contact</th><th>Statut</th></tr></thead>
+      <tbody id="bookings-body"></tbody>
+    </table>
+    <div class="empty-state" id="bookings-empty" style="display:none">Aucune réservation pour le moment.</div>
+  </div>
+
+  <div class="panel" id="panel-starts">
+    <table>
+      <thead><tr><th>Date</th><th>Client</th><th>Business</th><th>Description</th><th>Besoins</th><th>Statut</th></tr></thead>
+      <tbody id="starts-body"></tbody>
+    </table>
+    <div class="empty-state" id="starts-empty" style="display:none">Aucune demande pour le moment.</div>
+  </div>
+
+  <div class="panel" id="panel-settings">
+    <div class="settings-form">
+      <div class="field">
+        <label for="whatsapp-number" style="display:block;font-size:13px;font-weight:700;margin-bottom:6px">Numéro WhatsApp (format international, ex: +50912345678)</label>
+        <input id="whatsapp-number" type="text" style="width:100%;padding:11px 13px;border:1px solid #D8D8D8;border-radius:2px">
+      </div>
+      <button id="save-settings" class="btn btn-primary">Enregistrer</button>
+      <p id="settings-status" style="margin-top:12px;font-size:13.5px"></p>
+    </div>
+  </div>
+
+  <p id="global-status" style="margin:20px 0;color:#888;font-size:13.5px"></p>
+</div>
+
+<script src="/js/admin.js"></script>
+</body>
+</html>
