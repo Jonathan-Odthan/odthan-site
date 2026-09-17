@@ -1,0 +1,21 @@
+{
+  "name": "odthan-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site officiel ODTHAN — frontend statique + API Vercel Serverless Functions",
+  "scripts": {
+    "seed:admin": "node scripts/seed-admin.js"
+  },
+  "dependencies": {
+    "pg": "^8.13.1",
+    "bcryptjs": "^2.4.3",
+    "jose": "^5.9.6",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

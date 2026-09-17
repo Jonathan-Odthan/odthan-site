@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ODTHAN — Kòmanse biznis mwen</title>
+<meta name="description" content="Kòmanse pwojè kreyasyon biznis ou ak Odthan: ranpli fòm nan pou dekri pwojè ou.">
+<link rel="canonical" href="https://www.odthan.com/kòmanse.html">
+<link rel="icon" href="/assets/icons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/icons/favicon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Ale nan kontni prensipal la</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label="ODTHAN — Akèy">
+      <img src="/assets/logo-full-trans.png" alt="ODTHAN">
+    </a>
+    <nav class="main-nav" aria-label="Navigasyon prensipal">
+      <ul>
+        <li><a href="/" data-i18n="nav.home">Akèy</a></li>
+        <li><a href="/a-propos.html" data-i18n="nav.about">Konsènan nou</a></li>
+        <li><a href="/services.html" data-i18n="nav.services">Sèvis</a></li>
+        <li><a href="/tarifs.html" data-i18n="nav.pricing">Tarif</a></li>
+        <li><a href="/blog.html" data-i18n="nav.blog">Blòg</a></li>
+        <li><a href="/faq.html" data-i18n="nav.faq">FAQ</a></li>
+        <li><a href="/contact.html" data-i18n="nav.contact">Kontak</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="Chwazi lang">
+        <button data-lang="ht" class="is-active">HT</button>
+        <button data-lang="fr">FR</button>
+      </div>
+      <a class="btn btn-primary cta-desktop" href="/reservation.html" data-i18n="cta.book">REZÈVE YON KONSILTASYON</a>
+      <button class="nav-toggle" aria-label="Louvri meni an" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+  <nav class="mobile-nav" aria-label="Navigasyon mobil">
+    <ul>
+      <li><a href="/" data-i18n="nav.home">Akèy</a></li>
+      <li><a href="/a-propos.html" data-i18n="nav.about">Konsènan nou</a></li>
+      <li><a href="/services.html" data-i18n="nav.services">Sèvis</a></li>
+      <li><a href="/tarifs.html" data-i18n="nav.pricing">Tarif</a></li>
+      <li><a href="/blog.html" data-i18n="nav.blog">Blòg</a></li>
+      <li><a href="/faq.html" data-i18n="nav.faq">FAQ</a></li>
+      <li><a href="/contact.html" data-i18n="nav.contact">Kontak</a></li>
+      <li><a href="/reservation.html" data-i18n="nav.booking">Rezèvasyon</a></li>
+    </ul>
+    <div class="lang-switch" role="group" aria-label="Chwazi lang" style="margin-top:20px;width:fit-content">
+      <button data-lang="ht" class="is-active">HT</button>
+      <button data-lang="fr">FR</button>
+    </div>
+    <a class="btn btn-primary" href="/kòmanse.html" data-i18n="cta.start">KÒMANSE BIZNIS MWEN</a>
+  </nav>
+</header>
+
+<main id="main">
+<section class="page-hero"><div class="container"><div class="breadcrumb"><a href="/" data-i18n="breadcrumb.home">Akèy</a> / Kòmanse biznis mwen</div>
+<h1 data-i18n="page.start.title">Kòmanse biznis mwen</h1>
+<p data-i18n="page.start.lead">Ban nou detay sou pwojè ou. Plis enfòmasyon ou bay, plis nou ka byen konseye w.</p>
+</div></section>
+<section><div class="container" style="max-width:800px">
+<div class="form-card">
+<form data-odthan-form data-endpoint="/api/start-business" novalidate>
+<input type="text" name="company" autocomplete="off" tabindex="-1" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" aria-hidden="true">
+<div class="form-grid two-col">
+<div class="field"><label for="k-name" data-i18n="form.name">Non konplè</label><input id="k-name" name="name" type="text" required></div>
+<div class="field"><label for="k-phone" data-i18n="form.phone">Telefòn</label><input id="k-phone" name="phone" type="tel" required></div>
+<div class="field"><label for="k-whatsapp" data-i18n="form.whatsapp">WhatsApp</label><input id="k-whatsapp" name="whatsapp" type="tel"></div>
+<div class="field"><label for="k-email" data-i18n="form.email">Imèl</label><input id="k-email" name="email" type="email" required></div>
+<div class="field"><label for="k-city" data-i18n="form.city">Vil</label><input id="k-city" name="city" type="text"></div>
+<div class="field"><label for="k-dept" data-i18n="form.department">Depatman</label><input id="k-dept" name="department" type="text"></div>
+<div class="field"><label for="k-bizname" data-i18n="form.business_name">Non biznis ou vle a</label><input id="k-bizname" name="business_name" type="text"></div>
+<div class="field"><label for="k-industry" data-i18n="form.industry">Domèn aktivite</label><input id="k-industry" name="industry" type="text"></div>
+</div>
+<div class="field" style="margin-top:18px"><label for="k-desc" data-i18n="form.description">Deskripsyon pwojè a</label><textarea id="k-desc" name="description" required></textarea></div>
+<div class="form-grid two-col" style="margin-top:18px">
+<div class="field"><label for="k-budget" data-i18n="form.budget">Bidjè</label><input id="k-budget" name="budget" type="text"></div>
+<div class="field"><label for="k-needs" data-i18n="form.needs">Sèvis li bezwen</label><input id="k-needs" name="needs" type="text"></div>
+</div>
+<fieldset style="border:1px solid #E4E4E4;border-radius:2px;padding:16px 18px;margin-top:18px">
+<legend style="padding:0 8px;font-size:13.5px;font-weight:700">Detay siplemantè</legend>
+<div class="form-grid two-col">
+<label style="display:flex;gap:8px;align-items:center;font-size:14.5px"><input type="checkbox" name="website_yn"> <span data-i18n="form.website_yn">Sit entènèt</span></label>
+<label style="display:flex;gap:8px;align-items:center;font-size:14.5px"><input type="checkbox" name="shop_yn"> <span data-i18n="form.shop_yn">Boutik anliy</span></label>
+<label style="display:flex;gap:8px;align-items:center;font-size:14.5px"><input type="checkbox" name="facebook_yn"> <span data-i18n="form.facebook_yn">Facebook</span></label>
+<label style="display:flex;gap:8px;align-items:center;font-size:14.5px"><input type="checkbox" name="instagram_yn"> <span data-i18n="form.instagram_yn">Instagram</span></label>
+<label style="display:flex;gap:8px;align-items:center;font-size:14.5px"><input type="checkbox" name="seo_yn"> <span data-i18n="form.seo_yn">SEO</span></label>
+</div>
+</fieldset>
+<div class="field" style="margin-top:18px"><label for="k-extra" data-i18n="form.extra">Enfòmasyon siplemantè</label><textarea id="k-extra" name="extra"></textarea></div>
+<button class="btn btn-primary" type="submit" style="margin-top:16px" data-i18n="form.submit_start">KÒMANSE BIZNIS MWEN</button>
+<p class="form-status" role="status" style="margin-top:14px;font-size:14px;color:#B5251F"></p>
+</form>
+</div>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="/assets/logo-full-trans.png" alt="ODTHAN">
+      <p data-i18n="footer.desc">Odthan akonpaye antreprenè ayisyen yo nan kreyasyon biznis yo de zero, ak yon apwòch modèn epi pwofesyonèl.</p>
+    </div>
+    <div>
+      <h4 data-i18n="footer.company">Konpayi</h4>
+      <ul>
+        <li><a href="/a-propos.html" data-i18n="nav.about">Konsènan nou</a></li>
+        <li><a href="/blog.html" data-i18n="nav.blog">Blòg</a></li>
+        <li><a href="/faq.html" data-i18n="nav.faq">FAQ</a></li>
+        <li><a href="/contact.html" data-i18n="nav.contact">Kontak</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-i18n="footer.services">Sèvis</h4>
+      <ul>
+        <li><a href="/services.html#creation-entreprise" data-i18n="s1.title">Kreyasyon antrepriz</a></li>
+        <li><a href="/services.html#branding" data-i18n="s2.title">Kreyasyon mak</a></li>
+        <li><a href="/services.html#site-web" data-i18n="s6.title">Sit entènèt pwofesyonèl</a></li>
+        <li><a href="/services.html#seo" data-i18n="s8.title">Referansman SEO</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-i18n="footer.legal">Legal</h4>
+      <ul>
+        <li><a href="/confidentialite.html" data-i18n="footer.privacy">Politik konfidansyalite</a></li>
+        <li><a href="/conditions.html" data-i18n="footer.terms">Kondisyon jeneral</a></li>
+        <li><a href="/cookies.html" data-i18n="footer.cookies">Politik cookies</a></li>
+        <li><a href="/annulation.html" data-i18n="footer.cancel">Politik anilasyon</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; <span class="year-js">2026</span> ODTHAN. <span data-i18n="footer.rights">Tout dwa rezève.</span></span>
+    <span>Pòtoprens, Ayiti</span>
+  </div>
+</footer>
+<a class="whatsapp-float" aria-label="Ekri nou sou WhatsApp"
+   href="https://wa.me/50955561461?text=Bonjou%20Odthan%2C%20mwen%20ta%20renmen%20kreye%20yon%20biznis%20epi%20mwen%20ta%20renmen%20jwenn%20plis%20enfòmasyon."
+   target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-1-.3-.1-.5-.1-.6.1-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10 9 9.4 7.6 9.2 7c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.5 5.2L2 22l4.9-1.5C8.4 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.7 0-3.3-.5-4.6-1.3l-.3-.2-3 .9.9-2.9-.2-.3C4 15 3.5 13.5 3.5 12c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.5-8.5 8.5z"/></svg>
+</a>
+<script src="/js/i18n.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/forms.js"></script>
+</body>
+</html>
